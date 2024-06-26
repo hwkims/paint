@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL-based Drawing App</title>
+  <style>
+    /* Add some basic styling to make the app look more visually appealing */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    #canvas {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #color-picker {
+      margin-top: 10px;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <input type="color" id="color-picker" value="#000000">
+  <div class="button-container">
+    <button id="save-button">Save</button>
+    <button id="load-button">Load</button>
+    <button id="clear-button">Clear</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
